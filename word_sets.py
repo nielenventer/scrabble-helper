@@ -76,7 +76,7 @@ class WordSet(object):
         """
             Gets the path of the word file, assuming it's in the same directory as this script.
         """
-        return os.path.split(os.path.abspath(__file__))[0] + "\\" + file_name
+        return os.path.split(os.path.abspath(__file__))[0] + os.sep + file_name
 
     def _load_text_from_file(self, file_path):
         """
